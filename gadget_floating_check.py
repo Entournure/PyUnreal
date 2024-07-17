@@ -98,7 +98,7 @@ def check_actor():
                 actor_class = get_actor_class(actor)
                 actor_class_name = get_actor_class_name(actor_class)
                 # 특정 클래스의 액터들이 공중에 떠있는지 확인
-                if actor_class_name == "NkGadgetActorSpawner":
+                if actor_class_name == "":
                     if is_actor_floating(actor):
                         print(f"{actor_name}, {actor_location}")
 

@@ -18,16 +18,16 @@ def print_notify_events(asset_path):
         list_notify = unreal.AnimationLibrary.get_animation_notify_event_names(montage)
         # 저장된 노티파이 이름 목록 출력
         # print(list_notify) 
-        if "NkTransition" in list_notify:
-            notify = list_notify[list_notify.index("NkTransition")]
+        if "" in list_notify:
+            notify = list_notify[list_notify.index("")]
             print(notify)
         else:
             print(unreal.log_error(f"Failed to load AnimNotify at {montage}"))
 
 # 에셋 경로 지정 
-asset_path = "/Game/Mesh/NPC/Animation/Monster/Claymore/"
+asset_path = ""
 # 파일 경로 지정
-directory_path = "D:/work/Trunk/Client/Content/Mesh/NPC/Animation/Monster/Claymore/"
+directory_path = ""
 file_list = list_files(directory_path)
 for file in file_list:
     asset = asset_path + file
